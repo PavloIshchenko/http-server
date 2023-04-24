@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deply') {
             steps {
-                sh 'npm exec http-server'
+                sh 'sudo npm exec http-server'
             }
         }
     }
