@@ -6,10 +6,5 @@ pipeline {
                 sh 'node --version'
             }
         }
-        stage('Deply') {
-            steps {
-                sh 'sudo npm exec http-server'
-            }
-        }
     }
 }
