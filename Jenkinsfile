@@ -6,5 +6,10 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('Deply') {
+            steps {
+                sh 'npm exec http-server'
+            }
+        }
     }
 }
