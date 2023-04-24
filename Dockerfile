@@ -3,4 +3,4 @@ COPY . /mnt/http-server
 WORKDIR /mnt/http-server
 EXPOSE 8080
 RUN npm install http-server
-RUN ./script.sh
+CMD npm exec hppt-server
